@@ -22,7 +22,7 @@ Header.propTypes = {};
 
 function Header(props) {
   return (
-    <div className="">
+    <div className="bg-[#161d22]">
       <div className="fixed text-white bg-[#0f141a] top-0 z-50 w-full h-[72px] flex justify-between items-center">
         <div className="flex justify-between h-full lg:justify-start xl:justify-start w-full bg-[#0f141a] itmes-center">
           <div className="flex items-center w-[74px] p-2">
@@ -43,14 +43,17 @@ function Header(props) {
                 {
                   title: "Tạo giải đấu",
                   icon: faPlus,
+                  path: "create-tournaments",
                 },
                 {
                   title: "Giải đấu của tôi",
                   icon: faMagnifyingGlass,
+                  path: "my-tournaments",
                 },
                 {
                   title: "Danh sách giải đấu",
                   icon: faMagnifyingGlass,
+                  path: "list-tournaments",
                 },
               ]}
             />
@@ -62,14 +65,17 @@ function Header(props) {
                 {
                   title: "Tạo đội tuyển",
                   icon: faPlus,
+                  path: "create-teams",
                 },
                 {
                   title: "Quản lí đội tuyển",
                   icon: faMagnifyingGlass,
+                  path: "manage-teams",
                 },
                 {
                   title: "Danh sách đội tuyển",
                   icon: faMagnifyingGlass,
+                  path: "list-teams ",
                 },
               ]}
             />
@@ -87,14 +93,17 @@ function Header(props) {
                 {
                   title: "BXH tuyển thủ",
                   icon: faMagnifyingGlass,
+                  path: "player-ranking",
                 },
                 {
                   title: "BXH đội tuyển",
                   icon: faMagnifyingGlass,
+                  path: "teams-ranking",
                 },
                 {
                   title: "BXH tổng",
                   icon: faMagnifyingGlass,
+                  path: "total-ranking",
                 },
               ]}
             />
