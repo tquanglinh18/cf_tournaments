@@ -1,5 +1,5 @@
 import bannerFooter from "../../assets/images/banner_footer.png";
-import footerCfLogo from "../../assets/images/fozoter_cf_logo.png";
+import footerCfLogo from "../../assets/images/footer_cf_logo.png";
 import footerCfsLogo from "../../assets/images/footer_cfs_logo.png";
 import footerSgeLogo from "../../assets/images/footer_sge_logo.png";
 import footerVtcoLogo from "../../assets/images/footer_vtco_logo.png";
