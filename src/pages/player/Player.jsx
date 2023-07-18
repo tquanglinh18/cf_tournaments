@@ -9,44 +9,44 @@ Player.propTypes = {};
 
 function Player(props) {
   return (
-    <section class="bg-[#161d22] relative">
-      <div class="absolute top-0 w-full">
-        <img class="object-cover w-full" src={bgHeading} alt="" />
+    <section className="bg-[#161d22] relative">
+      <div className="absolute top-0 w-full">
+        <img className="object-cover w-full" src={bgHeading} alt="" />
       </div>
-      <div class="relative max-w-[1350px] w-full mx-auto pb-[5%] pt-[18.75%] px-3 sm:px-5 overflow-hidden">
-        <div class="w-full px-5 mb-8 lg:mb-14">
-          <img class="w-full" src={headingMemberOnPage} alt="" />
+      <div className="relative max-w-[1350px] w-full mx-auto pb-[5%] pt-[18.75%] px-3 sm:px-5 overflow-hidden">
+        <div className="w-full px-5 mb-8 lg:mb-14">
+          <img className="w-full" src={headingMemberOnPage} alt="" />
         </div>
-        <form class="flex flex-wrap md:flex-nowrap items-center w-full justify-center space-y-[2%] md:space-y-0 md:space-x-[2%] mb-8 lg:mb-14">
+        <form className="flex flex-wrap md:flex-nowrap items-center w-full justify-center space-y-[2%] md:space-y-0 md:space-x-[2%] mb-8 lg:mb-14">
           <input
-            class="md:max-w-[230px] w-full py-4 px-5 rounded bg-[#353f48] text-[#959697] placeholder:text-[#959697]"
+            className="md:max-w-[230px] w-full py-4 px-5 rounded bg-[#353f48] text-[#959697] placeholder:text-[#959697]"
             type="text"
             placeholder="Tìm theo tên"
           />
-          <div class="relative md:max-w-[230px] w-full">
+          <div className="relative md:max-w-[230px] w-full">
             <select
               placeholder="Tìm theo vị trí"
-              class="md:max-w-[230px] w-full py-4 px-5 rounded bg-[#353f48] text-[#959697] placeholder:text-[#959697]"
+              className="md:max-w-[230px] w-full py-4 px-5 rounded bg-[#353f48] text-[#959697] placeholder:text-[#959697]"
             >
               <option value="">Tanker</option>
               <option value="">Attacker</option>
               <option value="">Supporter</option>
             </select>
             <img
-              class="absolute right-[5%] top-1/2 -translate-y-1/2"
+              className="absolute right-[5%] top-1/2 -translate-y-1/2"
               src={icArrowDown}
               alt=""
             />
           </div>
           <button
             type="submit"
-            class="md:max-w-[230px] w-full text-center px-3 py-4 rounded bg-[#f75014] text-white"
+            className="md:max-w-[230px] w-full text-center px-3 py-4 rounded bg-[#f75014] text-white"
           >
             Tìm kiếm
           </button>
         </form>
-        <div class="overflow-x-auto">
-          <table class="w-full custom_member_on_page min-w-[992px]">
+        <div className="overflow-x-auto">
+          <table className="w-full custom_member_on_page min-w-[992px]">
             <thead>
               <tr>
                 <th>
@@ -79,9 +79,9 @@ function Player(props) {
                     <h3>1</h3>
                   </div>
                 </td>
-                <td class="w-[30%]">
+                <td className="w-[30%]">
                   <div>
-                    <h3 class="line-clamp-1">
+                    <h3 className="line-clamp-1">
                       Bùi Trọng Hiếu Bùi Trọng Hiếu Bùi Trọng Hiếu Bùi Trọng
                       Hiếu Bùi Trọng Hiếu
                     </h3>
@@ -98,7 +98,7 @@ function Player(props) {
                   </div>
                 </td>
                 <td>
-                  <div class="flex justify-center">
+                  <div className="flex justify-center">
                     <div>
                       <img src={icFacebok} alt="" />
                     </div>
@@ -106,7 +106,7 @@ function Player(props) {
                 </td>
                 <td>
                   <div>
-                    <button class="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
+                    <button className="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
                       Xem chi tiết
                     </button>
                   </div>
@@ -139,7 +139,7 @@ function Player(props) {
                   </div>
                 </td>
                 <td>
-                  <div class="flex justify-center">
+                  <div className="flex justify-center">
                     <div>
                       <img src={icFacebok} alt="" />
                     </div>
@@ -147,14 +147,14 @@ function Player(props) {
                 </td>
                 <td>
                   <div>
-                    <button class="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
+                    <button className="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
                       Xem chi tiết
                     </button>
                   </div>
                 </td>
                 <td>
                   <div>
-                    <button class="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
+                    <button className="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
                       Mời gia nhập
                     </button>
                   </div>
@@ -166,9 +166,9 @@ function Player(props) {
                     <h3>3</h3>
                   </div>
                 </td>
-                <td class="w-[30%]">
+                <td className="w-[30%]">
                   <div>
-                    <h3 class="line-clamp-1">
+                    <h3 className="line-clamp-1">
                       Bùi Trọng Hiếu Bùi Trọng Hiếu Bùi Trọng Hiếu Bùi Trọng
                       Hiếu Bùi Trọng Hiếu
                     </h3>
@@ -185,7 +185,7 @@ function Player(props) {
                   </div>
                 </td>
                 <td>
-                  <div class="flex justify-center">
+                  <div className="flex justify-center">
                     <div>
                       <img src={icFacebok} alt="" />
                     </div>
@@ -193,7 +193,7 @@ function Player(props) {
                 </td>
                 <td>
                   <div>
-                    <button class="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
+                    <button className="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
                       Xem chi tiết
                     </button>
                   </div>
@@ -226,7 +226,7 @@ function Player(props) {
                   </div>
                 </td>
                 <td>
-                  <div class="flex justify-center">
+                  <div className="flex justify-center">
                     <div>
                       <img src={icFacebok} alt="" />
                     </div>
@@ -234,7 +234,7 @@ function Player(props) {
                 </td>
                 <td>
                   <div>
-                    <button class="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
+                    <button className="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
                       Xem chi tiết
                     </button>
                   </div>
@@ -251,9 +251,9 @@ function Player(props) {
                     <h3>5</h3>
                   </div>
                 </td>
-                <td class="w-[30%]">
+                <td className="w-[30%]">
                   <div>
-                    <h3 class="line-clamp-1">
+                    <h3 className="line-clamp-1">
                       Bùi Trọng Hiếu Bùi Trọng Hiếu Bùi Trọng Hiếu Bùi Trọng
                       Hiếu Bùi Trọng Hiếu
                     </h3>
@@ -270,7 +270,7 @@ function Player(props) {
                   </div>
                 </td>
                 <td>
-                  <div class="flex justify-center">
+                  <div className="flex justify-center">
                     <div>
                       <img src={icFacebok} alt="" />
                     </div>
@@ -278,14 +278,14 @@ function Player(props) {
                 </td>
                 <td>
                   <div>
-                    <button class="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
+                    <button className="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
                       Xem chi tiết
                     </button>
                   </div>
                 </td>
                 <td>
                   <div>
-                    <button class="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
+                    <button className="min-w-[100px] px-5 py-1 rounded bg-[#f75014] text-center">
                       Xin gia nhập
                     </button>
                   </div>
