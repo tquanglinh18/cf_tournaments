@@ -1,0 +1,29 @@
+.custom_member_on_page tr th,
+.custom_member_on_page tr td {
+  padding: 19px;
+  text-align: center;
+}
+
+.custom_member_on_page tr td {
+  padding: 19px;
+  text-align: center;
+  background-color: #253138;
+  border-bottom: 3px solid #161d22;
+  color: #ffffff;
+}
+
+.custom_member_on_page th {
+  color: #657383;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
