@@ -1,8 +1,4 @@
-import React from "react";
 import PropTypes from "prop-types";
-import avtRankGold from "../../../assets/images/avatar_rank_gold.png";
-import avtRankSiliver from "../../../assets/images/avatar_rank_siliver.png";
-import avtRankBronze from "../../../assets/images/avatar_rank_bronze.png";
 
 TableRank.propTypes = {
   type: PropTypes.string,
@@ -13,17 +9,13 @@ TableRank.propTypes = {
 TableRank.defaultProps = {
   type: "player",
   data: [],
-  isHidden: true,
+  isHidden: false,
 };
 
 function TableRank(props) {
   const { type, data, isHidden } = props;
   return (
-    <div
-      className="overflow-x-auto tab_table_ranking"
-      style={{ display: { isHidden } ? "none" : "block" }}
-      id={type}
-    >
+    <div className="overflow-x-auto tab_table_ranking" id={type}>
       <table className="w-full custom_ranking_view_top min-w-[767px] lg:min-w-0">
         <thead>
           <tr>
@@ -49,7 +41,7 @@ function TableRank(props) {
             return (
               <tr key={rowData.rank}>
                 <td>
-                  <div>{rowData.rank}</div>
+                  {rowData.rank < 4 ? <div></div> : <div>{rowData.rank}</div>}
                 </td>
                 <td className="w-[40%]">
                   <div>

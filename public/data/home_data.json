@@ -1,0 +1,459 @@
+[
+  {
+    "type": "outstanding",
+    "description":"Sự kiện nổi bật",
+    
+    "data": [
+      {
+        "id": 1,
+        "name": "VTCONLINE - TOURNAMENTS 1",
+        "url_banner": "https://www.dinhnghia.com.vn/wp-content/uploads/2023/02/cf-la-gi-1.webp",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000001,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 2,
+        "name": "VTCONLINE - TOURNAMENTS 2",
+        "url_banner": "https://cdn.tgdd.vn/2020/07/content/cach-tai-crossfire-dot-kich-phien-ban-moi-vtc-online-don-gian-thumbzz-800x450.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000002,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 3,
+        "name": "VTCONLINE - TOURNAMENTS 3",
+        "url_banner": "https://img2.thuthuatphanmem.vn/uploads/2019/04/01/trong-game_031441791.png",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000003,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 18
+      },
+      {
+        "id": 4,
+        "name": "VTCONLINE - TOURNAMENTS 4",
+        "url_banner": "https://i.rada.vn/data/image/2023/01/27/crossfire-legends-ios.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000004,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 5,
+        "name": "VTCONLINE - TOURNAMENTS 5",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000005,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 13
+      },
+      {
+        "id": 6,
+        "name": "VTCONLINE - TOURNAMENTS 6",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/c3490f4a-a017-4a33-bd8f-6fcca2a6a12d.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000006,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 7,
+        "name": "VTCONLINE - TOURNAMENTS 7",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000007,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 14
+      },
+      {
+        "id": 8,
+        "name": "VTCONLINE - TOURNAMENTS 8",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/4019e43c-38ac-4eac-a2de-8de89af61d87.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000000,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 17
+      },
+      {
+        "id": 9,
+        "name": "VTCONLINE - TOURNAMENTS 9",
+        "url_banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvTQtTMUWZp5ir3s9PjXOYA-Q2v6B4E1lXg&usqp=CAU",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000008,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 16
+      }
+    ]
+  },
+  {
+    "type": "upcoming",
+    "description":"Giải đấu sắp diễn ra",
+    "data": [
+      {
+        "id": 1,
+        "name": "VTCONLINE - TOURNAMENTS 1",
+        "url_banner": "https://www.dinhnghia.com.vn/wp-content/uploads/2023/02/cf-la-gi-1.webp",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000001,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 2,
+        "name": "VTCONLINE - TOURNAMENTS 2",
+        "url_banner": "https://cdn.tgdd.vn/2020/07/content/cach-tai-crossfire-dot-kich-phien-ban-moi-vtc-online-don-gian-thumbzz-800x450.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000002,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 3,
+        "name": "VTCONLINE - TOURNAMENTS 3",
+        "url_banner": "https://img2.thuthuatphanmem.vn/uploads/2019/04/01/trong-game_031441791.png",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000003,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 18
+      },
+      {
+        "id": 4,
+        "name": "VTCONLINE - TOURNAMENTS 4",
+        "url_banner": "https://i.rada.vn/data/image/2023/01/27/crossfire-legends-ios.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000004,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 5,
+        "name": "VTCONLINE - TOURNAMENTS 5",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000005,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 13
+      },
+      {
+        "id": 6,
+        "name": "VTCONLINE - TOURNAMENTS 6",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/c3490f4a-a017-4a33-bd8f-6fcca2a6a12d.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000006,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 7,
+        "name": "VTCONLINE - TOURNAMENTS 7",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000007,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 14
+      },
+      {
+        "id": 8,
+        "name": "VTCONLINE - TOURNAMENTS 8",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/4019e43c-38ac-4eac-a2de-8de89af61d87.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000000,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 17
+      },
+      {
+        "id": 9,
+        "name": "VTCONLINE - TOURNAMENTS 9",
+        "url_banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvTQtTMUWZp5ir3s9PjXOYA-Q2v6B4E1lXg&usqp=CAU",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000008,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 16
+      }
+    ]
+  },
+  {
+    "type": "happening",
+    "description":"Giải đấu đang diễn ra",
+    "data": [
+      {
+        "id": 1,
+        "name": "VTCONLINE - TOURNAMENTS 1",
+        "url_banner": "https://www.dinhnghia.com.vn/wp-content/uploads/2023/02/cf-la-gi-1.webp",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000001,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 2,
+        "name": "VTCONLINE - TOURNAMENTS 2",
+        "url_banner": "https://cdn.tgdd.vn/2020/07/content/cach-tai-crossfire-dot-kich-phien-ban-moi-vtc-online-don-gian-thumbzz-800x450.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000002,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 3,
+        "name": "VTCONLINE - TOURNAMENTS 3",
+        "url_banner": "https://img2.thuthuatphanmem.vn/uploads/2019/04/01/trong-game_031441791.png",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000003,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 18
+      },
+      {
+        "id": 4,
+        "name": "VTCONLINE - TOURNAMENTS 4",
+        "url_banner": "https://i.rada.vn/data/image/2023/01/27/crossfire-legends-ios.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000004,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 5,
+        "name": "VTCONLINE - TOURNAMENTS 5",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000005,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 13
+      },
+      {
+        "id": 6,
+        "name": "VTCONLINE - TOURNAMENTS 6",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/c3490f4a-a017-4a33-bd8f-6fcca2a6a12d.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000006,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 7,
+        "name": "VTCONLINE - TOURNAMENTS 7",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000007,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 14
+      },
+      {
+        "id": 8,
+        "name": "VTCONLINE - TOURNAMENTS 8",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/4019e43c-38ac-4eac-a2de-8de89af61d87.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000000,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 17
+      },
+      {
+        "id": 9,
+        "name": "VTCONLINE - TOURNAMENTS 9",
+        "url_banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvTQtTMUWZp5ir3s9PjXOYA-Q2v6B4E1lXg&usqp=CAU",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000008,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 16
+      }
+    ]
+  },
+  {
+    "type": "finished",
+    "description":"Giải đấu đã kết thúc",
+    "data": [
+      {
+        "id": 1,
+        "name": "VTCONLINE - TOURNAMENTS 1",
+        "url_banner": "https://www.dinhnghia.com.vn/wp-content/uploads/2023/02/cf-la-gi-1.webp",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000001,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 2,
+        "name": "VTCONLINE - TOURNAMENTS 2",
+        "url_banner": "https://cdn.tgdd.vn/2020/07/content/cach-tai-crossfire-dot-kich-phien-ban-moi-vtc-online-don-gian-thumbzz-800x450.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000002,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 3,
+        "name": "VTCONLINE - TOURNAMENTS 3",
+        "url_banner": "https://img2.thuthuatphanmem.vn/uploads/2019/04/01/trong-game_031441791.png",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000003,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 18
+      },
+      {
+        "id": 4,
+        "name": "VTCONLINE - TOURNAMENTS 4",
+        "url_banner": "https://i.rada.vn/data/image/2023/01/27/crossfire-legends-ios.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000004,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 12
+      },
+      {
+        "id": 5,
+        "name": "VTCONLINE - TOURNAMENTS 5",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000005,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 13
+      },
+      {
+        "id": 6,
+        "name": "VTCONLINE - TOURNAMENTS 6",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/c3490f4a-a017-4a33-bd8f-6fcca2a6a12d.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000006,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 15
+      },
+      {
+        "id": 7,
+        "name": "VTCONLINE - TOURNAMENTS 7",
+        "url_banner": "https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/157685/Originals/tai-game-cf-00.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000007,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 14
+      },
+      {
+        "id": 8,
+        "name": "VTCONLINE - TOURNAMENTS 8",
+        "url_banner": "https://photoservice.goplay.vn///Resources/Upload/Images/News/32/4019e43c-38ac-4eac-a2de-8de89af61d87.jpg",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000000,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 17
+      },
+      {
+        "id": 9,
+        "name": "VTCONLINE - TOURNAMENTS 9",
+        "url_banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvTQtTMUWZp5ir3s9PjXOYA-Q2v6B4E1lXg&usqp=CAU",
+        "start_at": "01-02",
+        "end_at": "01-04",
+        "game_mode": "Đặt boom",
+        "prize": 1000000008,
+        "form": "Offline",
+        "create_by": "TaoTAo",
+        "total_teams": 16
+      }
+    ]
+  }
+]

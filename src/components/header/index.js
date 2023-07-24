@@ -1,4 +1,4 @@
-window.onload = function () {
+function loadJS() {
   const btnNotifyElm = document.getElementById("notify-btn");
   btnNotifyElm.addEventListener("click", () => {
     const notifyListElm = document.getElementById("notify-list");
@@ -10,4 +10,6 @@ window.onload = function () {
     const menuMobileElm = document.getElementById("menu-mobile");
     menuMobileElm.classList.toggle("hidden");
   });
-};
+}
+
+window.onload = loadJS;

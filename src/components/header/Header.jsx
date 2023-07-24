@@ -22,8 +22,8 @@ Header.propTypes = {};
 
 function Header(props) {
   return (
-    <div className="bg-[#161d22]">
-      <div className="fixed text-white bg-[#0f141a] top-0 z-50 w-full h-[72px] flex justify-between items-center">
+    <>
+      <div className="fixed text-white bg-[#0f141a] top-0 z-40 w-full h-[72px] flex justify-between items-center border-b border-b-[#2c3944]">
         <div className="flex justify-between h-full lg:justify-start xl:justify-start w-full bg-[#0f141a] itmes-center">
           <div className="flex items-center w-[74px] p-2">
             <img src={logoCF} alt="" className="w-full" />
@@ -127,7 +127,7 @@ function Header(props) {
               </div>
               <div
                 id="notify-list"
-                className="absolute hidden bg-black text-white w-[90%] lg:w-[40%] lg:translate-x-0 top-[72px] left-[50%] -translate-x-[50%] max-h-[350px] overflow-y-auto"
+                className="absolute hidden z-50 bg-black text-white w-[90%] lg:w-[40%] lg:translate-x-0 top-[72px] left-[50%] -translate-x-[50%] max-h-[350px] overflow-y-auto"
               >
                 <NotifyItem type={"success"} message={"hehee"} />
                 <NotifyItem type={"error"} message={"oh n o"} />
@@ -163,7 +163,7 @@ function Header(props) {
       <div id="menu-mobile" className="hidden">
         <MenuMobile nickName={"TuanNA"} />
       </div>
-    </div>
+    </>
   );
 }
 

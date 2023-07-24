@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import NotFound from "../pages/error/NotFound";
-import Home from "../pages/home/Home";
+import Home from "../pages/home/Home.jsx";
 import Layout from "../pages/layout/Layout";
 import Media from "../pages/media/Media";
 import Player from "../pages/player/Player";
@@ -16,7 +16,6 @@ import MyTournaments from "../pages/tournaments/my-tournaments/MyTournaments";
 
 const Router = () => {
     return (
-        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index path="home" element={<Home />} />
@@ -43,7 +42,6 @@ const Router = () => {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </BrowserRouter>
     );
 };
 
