@@ -41,6 +41,7 @@ const SliderMain = () => {
       window.removeEventListener("resize", handleResize);
     };
   });
+
   const ref = React.useRef(StackedCarousel);
   return (
     <div className="card relative">
@@ -48,6 +49,7 @@ const SliderMain = () => {
         <ResponsiveContainer
           carouselRef={ref}
           render={(width, carouselRef) => {
+            console.log(carouselRef);
             return (
               <StackedCarousel
                 ref={carouselRef}
@@ -55,6 +57,9 @@ const SliderMain = () => {
                 slideWidth={(widthContainer * 65) / 100}
                 carouselWidth={width - 72}
                 data={data}
+                height={
+                  document.getElementById("card_slider_stacked")?.height + 40
+                }
                 maxVisibleSlide={5}
                 disableSwipe
                 customScales={[1, 0.85, 0.7, 0.55]}

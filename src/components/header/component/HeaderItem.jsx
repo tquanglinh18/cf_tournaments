@@ -44,7 +44,7 @@ function HeaderItem(props) {
                 className="relative border-l-2 border-l-[#2c3944] border-b-[1px] border-b-[#2c3944] hover:text-[#f75014] hover:border-l-2 hover:border-l-[#f75014] cursor-pointer bg-[#0f141a]"
               >
                 <Link
-                  to={"/" + subMenu.path}
+                  to={"/" + id + "/" + subMenu.path}
                   className="flex items-center justify-between p-3"
                 >
                   <p>{subMenu.title}</p>

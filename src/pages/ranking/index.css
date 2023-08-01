@@ -1,74 +1,87 @@
 .custom_ranking_view_top tbody tr:nth-child(1) {
-    background-image: url("../../assets/images/bg_rank_top_gold.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    color: #161d22;
+  background-image: url("../../assets/images/bg_rank_top_gold.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #161d22;
+}
+
+.custom_ranking_view_top tbody tr:nth-child(2) {
+  background-image: url("../../assets/images/bg_rank_top_siliver.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #161d22;
+}
+
+.custom_ranking_view_top tbody tr:nth-child(3) {
+  background-image: url("../../assets/images/bg_rank_top_bronze.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #161d22;
+}
+
+.custom_ranking_view_top tbody tr:nth-child(1) h3,
+.custom_ranking_view_top tbody tr:nth-child(2) h3,
+.custom_ranking_view_top tbody tr:nth-child(3) h3 {
+  padding: 19px;
+}
+
+.custom_ranking_view_top td {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 !important;
+}
+
+.custom_ranking_view_top tbody tr:nth-child(n + 4) td div {
+  color: #ffffff;
+  background-color: #253138;
+  border-bottom: 3px solid #161d22;
+  padding: 19px
+}
+
+.custom_ranking_view_top tbody tr:nth-child(-n + 3) td:nth-child(n + 2) {
+  font-weight: 700;
+}
+
+.custom_ranking_view_top thead tr th div {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #657383;
+  padding: 19px;
+}
+
+.custom_ranking_view_top tbody tr:nth-child(4) td div {
+  border-top: 3px solid #161d22;
+}
+
+.tab_select_item {
+  background-color: #f75014;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.tab_select_item--center {
+  transform: translate3d(0, 0, 0);
+  z-index: 50;
+}
+
+.tab_select_item--next,
+.tab_select_item--previous {
+  background-color: #0f141a;
+  z-index: 40;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.tab_select_item--next {
+  transform: translate3d(120%, 0, -400px);
+  @media screen and (max-width: 767px) {
+    transform: translate3d(0%, 140%, -400px);
   }
-  .custom_ranking_view_top tbody tr:nth-child(2) {
-    background-image: url("../../assets/images/bg_rank_top_siliver.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    color: #161d22;
+}
+
+.tab_select_item--previous {
+  transform: translate3d(-120%, 0, -400px);
+  @media screen and (max-width: 767px) {
+    transform: translate3d(0%, -140%, -400px);
   }
-  .custom_ranking_view_top tbody tr:nth-child(3) {
-    background-image: url("../../assets/images/bg_rank_top_bronze.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    color: #161d22;
-  }
-  .custom_ranking_view_top td {
-    text-align: center;
-    font-size: 14px;
-    padding: 0px !important;
-  }
-  .custom_ranking_view_top tbody tr:nth-child(n + 4) td div {
-    padding: 19px;
-    color: #ffffff;
-    background-color: #253138;
-    border-bottom: 3px solid #161d22;
-  }
-  .custom_ranking_view_top thead tr th div,
-  .custom_ranking_view_top tbody tr:nth-child(-n + 3) td:nth-child(n + 2) {
-    padding: 19px;
-  }
-  .custom_ranking_view_top tbody tr:nth-child(-n + 3) td:nth-child(n + 2) {
-    font-weight: 700;
-  }
-  .custom_ranking_view_top thead tr th div {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #657383;
-  }
-  .custom_ranking_view_top tbody tr:nth-child(4) td div {
-    border-top: 2px solid #161d22;
-  }
-  
-  .tab_select_item {
-    background-color: #f75014;
-    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-  }
-  .tab_select_item--center {
-    transform: translate3d(0, 0, 0);
-    z-index: 50;
-  }
-  .tab_select_item--next,
-  .tab_select_item--previous {
-    background-color: #0f141a;
-    z-index: 40;
-    display: flex;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  .tab_select_item--next {
-    transform: translate3d(120%, 0, -400px);
-    @media screen and (max-width: 767px) {
-      transform: translate3d(0%, 140%, -400px);
-    }
-  }
-  .tab_select_item--previous {
-    transform: translate3d(-120%, 0, -400px);
-    @media screen and (max-width: 767px) {
-      transform: translate3d(0%, -140%, -400px);
-    }
-  }
-  
+}

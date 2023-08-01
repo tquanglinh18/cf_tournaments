@@ -2,9 +2,8 @@
 #teams:hover #sub-menu-teams,
 #rank:hover #sub-menu-rank { 
     display: block;
-    transform: translateY(2px);
+    transform: translateY(1px);
 }
-
 
 ::-webkit-scrollbar {
     width: 6px;

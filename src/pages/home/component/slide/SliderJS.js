@@ -1,14 +1,13 @@
 import React from "react";
-import { StackedCarouselSlideProps } from "react-stacked-center-carousel";
-import "./SliderCSS.css";
 import icCaption from "../../../../assets/images/ic_caption.png";
 import icPlay from "../../../../assets/images/ic_play.png";
 import icPrize from "../../../../assets/images/ic_prize.png";
 import icTime from "../../../../assets/images/ic_time.png";
 import icTotalTeams from "../../../../assets/images/ic_total_team.png";
+import "./SliderCSS.css";
 
 export const Slide = React.memo(function (StackedCarouselSlideProps) {
-  const { data, dataIndex, isCenterSlide, swipeTo, slideIndex } =
+  const { isCenterSlide, swipeTo, slideIndex } =
     StackedCarouselSlideProps;
   return (
     <div className="card-card" draggable={false}>
@@ -20,7 +19,7 @@ export const Slide = React.memo(function (StackedCarouselSlideProps) {
           }}
         />
       </div>
-      <div className="flex items-center justify-center h-full">
+      <div className="flex items-center justify-center h-full" id="card_slider_stacked">
         <div className="w-[65%] h-full hidden lg:block bg-slate-500">
           <img
             src="https://images.alphacoders.com/614/thumb-1920-614654.jpg"
