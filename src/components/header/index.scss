@@ -1,0 +1,28 @@
+@mixin subMenuShow {
+  display: block;
+  transform: translateY(1px);
+}
+
+#tournaments {
+  &:hover {
+    #sub-menu-tournaments {
+      @include subMenuShow();
+    }
+  }
+}
+
+#teams {
+  &:hover {
+    #sub-menu-teams {
+      @include subMenuShow();
+    }
+  }
+}
+
+#rank {
+  &:hover {
+    #sub-menu-rank {
+      @include subMenuShow();
+    }
+  }
+}

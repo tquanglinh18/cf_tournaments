@@ -9,6 +9,7 @@ import TournamentItem from "./TournamentItem";
 
 type Props = {
   type: any;
+  index: number;
   description: any;
   data: any[];
 };
@@ -27,7 +28,7 @@ const headingIcon: Record<string, string> = {
 };
 
 function SectionItem(props: Props) {
-  const { type, data, description } = props;
+  const { type, index, data, description } = props;
   var settingsSubSlide = {
     infinite: true,
     speed: 500,
@@ -59,22 +60,31 @@ function SectionItem(props: Props) {
     ],
   };
   return (
-    <div id={type} className="w-full py-8">
-      <div className="container flex flex-col mx-auto">
-        <div className="w-[90%] mx-auto flex items-center mb-8">
-          <div className="mr-2">
-            <img src={headingIcon[type]} alt="" />
+    <div
+      id={type}
+      className={
+        index % 2 !== 0
+          ? "w-full py-8 shadow-inner-section bg-[#141a1e]"
+          : "w-full py-8"
+      }
+    >
+      <div className="container mx-auto">
+        <div className="container flex flex-col mx-auto">
+          <div className="w-[90%] mx-auto flex items-center mb-8">
+            <div className="mr-2">
+              <img src={headingIcon[type]} alt="" />
+            </div>
+            <p style={{ color: headingColor[type] }} className={`text-[20px]`}>
+              {description}
+            </p>
           </div>
-          <p style={{ color: headingColor[type] }} className={`text-[20px]`}>
-            {description}
-          </p>
-        </div>
-        <div className="w-[75%] sm:w-[85%] lg:w-[95%] mx-auto slide-main">
-          <Slider {...settingsSubSlide}>
-            {data.map((item, index) => {
-              return <TournamentItem key={index} tournament={item} />;
-            })}
-          </Slider>
+          <div className="w-[75%] sm:w-[85%] lg:w-[95%] mx-auto slide-main">
+            <Slider {...settingsSubSlide}>
+              {data.map((item, index) => {
+                return <TournamentItem key={index} tournament={item} />;
+              })}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>

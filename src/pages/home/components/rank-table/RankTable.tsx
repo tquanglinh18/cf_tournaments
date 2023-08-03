@@ -1,7 +1,7 @@
 import logoCF from "../../../../assets/images/logo_cf.png";
 import titleTopPlayer from "../../../../assets/images/title_top_player.png";
 import titleTopTeams from "../../../../assets/images/title_top_teams.png";
-import "./index.css";
+import "./index.scss";
 
 type Props = {
   type: string;
@@ -40,7 +40,7 @@ function RankTable(props: Props) {
               </th>
               <th className="w-[15%] text-[8px] md:text-[12px] xl:text-[14px]">
                 Số trận thắng
-              </th>
+              </th> 
               <th className="w-[15%] text-[8px] md:text-[12px] xl:text-[14px]">
                 Số giải tham dự
               </th>

@@ -1,0 +1,30 @@
+@mixin bgStyle {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #161d22;
+}
+.custom_table {
+  thead tr th {
+    padding: 4px;
+  }
+  tbody {
+    tr {
+      &:first-child {
+        background-image: url("../../../../assets/images/bg_rank_top1.png");
+        @include bgStyle;
+      }
+      &:nth-child(2) {
+        background-image: url("../../../../assets/images/bg_rank_top2.png");
+        @include bgStyle;
+      }
+      &:nth-child(3) {
+        background-image: url("../../../../assets/images/bg_rank_top3.png");
+        @include bgStyle;
+      }
+    }
+
+    td {
+      padding: 4px 2px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.custom_member_on_page {
+  tr {
+    th {
+      padding: 19px;
+      text-align: center;
+      color: #657383;
+    }
+  }
+  td {
+    padding: 19px;
+    text-align: center;
+    background-color: #253138;
+    border-bottom: 3px solid #161d22;
+    color: #ffffff;
+  }
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  ::-ms-expand {
+    display: none;
+  }
+}

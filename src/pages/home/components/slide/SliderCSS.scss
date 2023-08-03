@@ -1,0 +1,74 @@
+.card {
+  transition: all 300ms ease;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+
+  .card-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.card-card {
+  transition: all 300ms ease;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  &:hover {
+    .card-overlay {
+      background-color: #0000002d;
+    }
+  }
+  .card-overlay {
+    user-select: none;
+    position: absolute;
+    background-color: #00000099;
+    transition: all 300ms ease;
+  }
+
+  .cover-image {
+    object-fit: cover;
+  }
+
+  .cover {
+    position: absolute;
+    transition: opacity 300ms ease;
+  }
+
+  .cover.on {
+    opacity: 1;
+    z-index: 1;
+  }
+  .cover.off {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.react-stacked-center-carousel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-stacked-center-carousel-slide-0 {
+  .card-card:hover {
+    transform: none;
+  }
+  .card-overlay {
+    background-color: #00000099 !important;
+  }
+  .card-card .cover {
+    transition: opacity 300ms ease, z-index 0ms 300ms;
+  }
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}

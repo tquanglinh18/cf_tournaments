@@ -4,7 +4,7 @@ import icPlay from "../../../../assets/images/ic_play.png";
 import icPrize from "../../../../assets/images/ic_prize.png";
 import icTime from "../../../../assets/images/ic_time.png";
 import icTotalTeams from "../../../../assets/images/ic_total_team.png";
-import "./SliderCSS.css";
+import "./SliderCSS.scss";
 
 export const Slide = React.memo(function (StackedCarouselSlideProps) {
   const { isCenterSlide, swipeTo, slideIndex } =

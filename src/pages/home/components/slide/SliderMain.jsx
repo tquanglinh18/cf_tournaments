@@ -6,7 +6,7 @@ import {
   StackedCarousel,
 } from "react-stacked-center-carousel";
 import { Slide } from "./SliderJS";
-import "./SliderCSS.css";
+import "./SliderCSS.scss";
 
 const SliderMain = () => {
   const data = [
@@ -49,7 +49,6 @@ const SliderMain = () => {
         <ResponsiveContainer
           carouselRef={ref}
           render={(width, carouselRef) => {
-            console.log(carouselRef);
             return (
               <StackedCarousel
                 ref={carouselRef}
