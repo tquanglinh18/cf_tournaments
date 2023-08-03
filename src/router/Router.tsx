@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import PopUpUpdateInfo from "../components/pop-up/PopUpUpdateInfo";
 import NotFound from "../pages/error/NotFound";
@@ -13,8 +14,11 @@ import ManageTeams from "../pages/teams/manage/ManageTeams";
 import CreateTournaments from "../pages/tournaments/create/CreateTournaments";
 import ListTournaments from "../pages/tournaments/list-tournaments/ListTournaments";
 import MyTournaments from "../pages/tournaments/my-tournaments/MyTournaments";
+import { selectUser } from "../redux/features/userSlice";
+import ProtectedRoute from "./ProtectedRoute";
 
 const Router = () => {
+  const user = useSelector(selectUser);
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -30,7 +34,15 @@ const Router = () => {
           element={<ListTournaments />}
         />
 
-        <Route path="/teams" element={<Teams />} />
+        <Route
+          path="/teams"
+          element={
+            <ProtectedRoute user={user}>
+              <Teams />
+            </ProtectedRoute>
+          }
+        />
+
         <Route path="/teams/create-teams" element={<CreateTeams />} />
         <Route path="/teams/manage-teams" element={<ManageTeams />} />
         <Route path="/teams/list-teams" element={<ListTeams />} />

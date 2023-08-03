@@ -3,7 +3,10 @@ import bgPopUp from "../../assets/images/bg_pop_up.png";
 import icHeadingInfo from "../../assets/images/heading_info_player.png";
 import icChecked from "../../assets/images/ic_sucess.png";
 import icUpload from "../../assets/images/ic_upload.png";
-import bgPopUpConfirm from "../../assets/images/bg_pop_up_confirm.png";
+
+import icDropDown from "../../assets/images/ic_dropdown.png";
+import ConfirmSuccess from "./components/ConfirmSuccess";
+import ConfirmFailed from "./components/ConfirmFailed";
 
 type Props = {};
 
@@ -26,11 +29,6 @@ function PopUpUpdateInfo(props: Props) {
       ?.classList.toggle("hidden");
   };
 
-  function handleConfirmSuccess() {
-    document.getElementById("pop-up-confirm--success")?.classList.add("hidden");
-    document.getElementById("pop-up-update")?.classList.add("hidden");
-  }
-
   const fieldOptions = {
     name: {
       required: "Họ và tên không được bỏ trống",
@@ -40,6 +38,7 @@ function PopUpUpdateInfo(props: Props) {
         message: "Họ và tên quá dài",
       },
     },
+
     nickname: {
       required: "Nickname không được bỏ trống",
       maxLength: {
@@ -47,6 +46,7 @@ function PopUpUpdateInfo(props: Props) {
         message: "Nickname quá dài",
       },
     },
+
     year_of_birth: {
       required: "Năm sinh không được bỏ trống",
       max: {
@@ -62,12 +62,15 @@ function PopUpUpdateInfo(props: Props) {
         message: "Năm sinh không hợp lệ",
       },
     },
+
     facebook: {
       required: "Facebook không được bỏ trống",
     },
+
     location: {
       required: "Tỉnh thành không được bỏ trống",
     },
+
     forte: {
       required: "Vị trí sở trường không được bỏ trống",
     },
@@ -90,7 +93,7 @@ function PopUpUpdateInfo(props: Props) {
           <div className="mb-[5%] w-full">
             <img src={icHeadingInfo} alt="" className="w-full" />
           </div>
-          <div className="grid grid-cols-3 gap-8 mb-[5%]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-[5%]">
             <div className="flex flex-col space-y-2">
               <label htmlFor="name-value" className="flex mb-4 space-x-2">
                 <div className="px-2 bg-[#ffc421] rounded-full">1</div>
@@ -164,42 +167,52 @@ function PopUpUpdateInfo(props: Props) {
                 <div className="px-2 bg-[#ffc421] rounded-full">5</div>
                 <div className="text-[#ffc421]">Tỉnh thành</div>
               </label>
-              <select
-                className="flex w-full px-4 py-2 bg-white rounded shadow-inner cursor-pointer hover:bg-[#E8E8E8]"
-                {...register("location", fieldOptions.location)}
-              >
-                <option value="" disabled selected>
-                  Chọn tỉnh thành
-                </option>
-                <option value="Hà Nội">Hà Nội</option>
-                <option value="Nam Định">Nam Định</option>
-                <option value="Bắc Ninh">Bắc Ninh</option>
-              </select>
+              <div className="relative cursor-pointer hover:bg-[#E8E8E8] rounded">
+                <select
+                  defaultValue={0}
+                  className="flex w-full px-4 py-2 bg-white shadow-inner rounded"
+                  {...register("location", fieldOptions.location)}
+                >
+                  <option value="">Chọn tỉnh thành</option>
+                  <option value="Hà Nội">Hà Nội</option>
+                  <option value="Nam Định">Nam Định</option>
+                  <option value="Bắc Ninh">Bắc Ninh</option>
+                </select>
+                <div className=" absolute top-[50%] -translate-y-[50%] right-[5%]">
+                  <img src={icDropDown} alt="" />
+                </div>
+              </div>
               <small className="text-[#F20000]">
                 {errors?.location && errors.location.message?.toString()}
               </small>
             </div>
+
             <div className="flex flex-col space-y-2">
               <label htmlFor="forte-value" className="flex mb-4 space-x-2">
                 <div className="px-2 bg-[#ffc421] rounded-full">6</div>
                 <div className="text-[#ffc421]">Vị trí sở trưởng</div>
               </label>
-              <select
-                className="flex w-full px-4 py-2 bg-white rounded shadow-inner cursor-pointer hover:bg-[#E8E8E8]"
-                {...register("forte", fieldOptions.forte)}
-              >
-                <option value="" disabled selected>
-                  Chọn vị trí sở trường
-                </option>
-                <option value="Attack">Attack</option>
-                <option value="Sniper">Sniper</option>
-                <option value="ADR">ADR</option>
-              </select>
+              <div className="relative cursor-pointer hover:bg-[#E8E8E8] rounded">
+                <select
+                  defaultValue={0}
+                  className="flex w-full px-4 py-2 bg-white shadow-inner rounded"
+                  {...register("forte", fieldOptions.forte)}
+                >
+                  <option value="">Chọn vị trí sở trường</option>
+                  <option value="Attack">Attack</option>
+                  <option value="Sniper">Sniper</option>
+                  <option value="ADR">ADR</option>
+                </select>
+                <div className=" absolute top-[50%] -translate-y-[50%] right-[5%]">
+                  <img src={icDropDown} alt="" />
+                </div>
+              </div>
               <small className="text-[#F20000]">
                 {errors?.forte && errors.forte.message?.toString()}
               </small>
             </div>
           </div>
+
           <div className="border-[#959697] border-[1px] p-4 md:p-8 lg:p-12 mb-8">
             <div className="flex flex-col justify-between space-y-12 lg:flex-row lg:space-x-12 lg:space-y-0">
               <div className="w-full mx-auto md:w-[70%] lg:w-[50%] 2xl:w-[30%]">
@@ -210,7 +223,10 @@ function PopUpUpdateInfo(props: Props) {
                     className="object-cover"
                   />
                 </div>
-                <label className="cursor-pointer w-full rounded bg-[#ffc421] flex items-center space-x-2 px-2 py-1 justify-center">
+                <label
+                  htmlFor="input-file-avatar"
+                  className="cursor-pointer w-full rounded bg-[#ffc421] flex items-center space-x-2 px-2 py-1 justify-center"
+                >
                   <div className="">Tải ảnh đại diện</div>
                   <div className="aspect-square">
                     <img src={icUpload} alt="" />
@@ -269,64 +285,8 @@ function PopUpUpdateInfo(props: Props) {
           </div>
         </div>
       </div>
-
-      {/* PopUp Confirm Success */}
-      <div
-        id="pop-up-confirm--success"
-        className="w-full hidden h-[100vh] left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%] fixed z-40 bg-transparent text-black"
-      >
-        <div className="w-[70%] lg:w-[50%] xl:w-[40%] min-w-[320px] fixed z-50 top-[50%] -translate-x-[50%] left-[50%] -translate-y-[50%] mx-auto">
-          <div className="relative">
-            <div className="w-full">
-              <img src={bgPopUpConfirm} alt="" className="w-full " />
-            </div>
-            <div className="absolute top-0 flex flex-col items-center justify-between w-full h-full p-2 md:p-4 lg:p-6">
-              <div className="text-center text-white uppercase text-base md:text-[20px]">
-                THÔNG BÁO
-              </div>
-              <div className="text-[#ffc421] text-center text-[14px] md:text-base">
-                Cập nhật thành công
-              </div>
-              <button
-                id="btn-confirm--success"
-                onClick={handleConfirmSuccess}
-                className="bg-[#ffc421] px-2 py-1 rounded text-center mx-auto w-[200px] font-bold text-[12px] md:text-[14px]"
-              >
-                Cập nhật
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* PopUp Confirm Faild */}
-      <div
-        id="pop-up-confirm--error"
-        className="w-full h-[100vh] left-[50%] -translate-x-[50%] top-[50%] -translate-y-[50%] hidden fixed z-40 bg-transparent text-black"
-      >
-        <div className="w-[70%] lg:w-[50%] xl:w-[40%] min-w-[320px] fixed z-50 top-[50%] -translate-x-[50%] left-[50%] -translate-y-[50%] mx-auto">
-          <div className="relative">
-            <div className="w-full">
-              <img src={bgPopUpConfirm} alt="" className="w-full " />
-            </div>
-            <div className="absolute top-0 flex flex-col items-center justify-between w-full h-full p-2 md:p-4 lg:p-6">
-              <div className="text-center text-white uppercase text-base md:text-[20px]">
-                THÔNG BÁO
-              </div>
-              <div className="text-white text-center text-[14px] md:text-base">
-                <span className="text-[#ff2121]">Cập nhật thất bại. </span>
-                <br className="block md:hidden" />
-                Vui lòng điền đầy đủ thông tin
-              </div>
-              <button
-                id="btn-confirm--error"
-                className="bg-[#ffc421] px-2 py-1 rounded text-center mx-auto w-[200px] font-bold text-[12px] md:text-[14px]"
-              >
-                Cập nhật
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ConfirmSuccess />
+      <ConfirmFailed />
     </form>
   );
 }

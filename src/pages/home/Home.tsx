@@ -1,13 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import SectionItem from "./component/SectionItem";
-import SliderMain from "./component/slide/SliderMain";
+import SectionItem from "./components/SectionItem";
+import SliderMain from "./components/slide/SliderMain";
 import Footer from "../../components/footer/Footer";
-import SubMenu from "./component/SubMenu";
+import SubMenu from "./components/SubMenu";
 import bgBannerFooter from "../../assets/images/banner_footer.png";
-import RankTable from "./component/rank-table/RankTable";
+import RankTable from "./components/rank-table/RankTable";
 import titleRanking from "../../assets/images/text_rank_heading.png";
 import useScrollToSection from "../../hooks/useScrollToSection";
+import "./index.scss";
 
 function Home() {
   const [listTournaments, setListTournaments] = useState<any>([]);
@@ -59,14 +60,15 @@ function Home() {
     <div className="relative w-full mt-[72px]">
       <SubMenu />
       <div className="relative lg:ml-[75px] flex flex-col bg-[#161d22]">
-        <div className="py-[4%]">
+        <div className="py-[4%] shadow-inner-section">
           <SliderMain />
         </div>
-        <div className="container mx-auto">
+        <div className="">
           <div className="mb-[4%]">
             {listTournaments.map((tournament: any, index: any) => {
               return (
                 <SectionItem
+                  index={index}
                   key={index}
                   type={tournament.type}
                   description={tournament.description}

@@ -1,12 +1,12 @@
 [
   {
     "type": "outstanding",
-    "description":"Sự kiện nổi bật",
-    
+    "description": "Sự kiện nổi bật",
+
     "data": [
       {
         "id": 1,
-        "name": "VTCONLINE - TOURNAMENTS 1",
+        "name": "VTCONLINE - TOURNAMENTS 1 VTCONLINE - TOURNAMENTS 1 VTCONLINE - TOURNAMENTS 1",
         "url_banner": "https://www.dinhnghia.com.vn/wp-content/uploads/2023/02/cf-la-gi-1.webp",
         "start_at": "01-02",
         "end_at": "01-04",
@@ -116,7 +116,7 @@
   },
   {
     "type": "upcoming",
-    "description":"Giải đấu sắp diễn ra",
+    "description": "Giải đấu sắp diễn ra",
     "data": [
       {
         "id": 1,
@@ -230,7 +230,7 @@
   },
   {
     "type": "happening",
-    "description":"Giải đấu đang diễn ra",
+    "description": "Giải đấu đang diễn ra",
     "data": [
       {
         "id": 1,
@@ -344,7 +344,7 @@
   },
   {
     "type": "finished",
-    "description":"Giải đấu đã kết thúc",
+    "description": "Giải đấu đã kết thúc",
     "data": [
       {
         "id": 1,

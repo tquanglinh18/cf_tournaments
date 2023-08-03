@@ -5,6 +5,7 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import icHome from "../../assets/images/ic_home.png";
 import icMedia from "../../assets/images/ic_media.png";
 import icPlayer from "../../assets/images/ic_player.png";
@@ -12,17 +13,39 @@ import icRank from "../../assets/images/ic_rank.png";
 import icTeam from "../../assets/images/ic_team.png";
 import icTournaments from "../../assets/images/ic_tournaments.png";
 import logoCF from "../../assets/images/logo_cf.png";
-import HeaderItem from "./component/HeaderItem";
-import MenuMobile from "./component/MenuMobile";
-import NotifyItem from "./component/NotifyItem";
-import "./index.css";
-import { useState } from "react";
+import HeaderItem from "./components/HeaderItem";
+import MenuMobile from "./components/MenuMobile";
+import NotifyItem from "./components/NotifyItem";
+import "./index.scss";
+import { login, logout } from "../../redux/features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser } from "../../redux/features/userSlice";
 
 function Header() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
   const [isHiddenNotify, setIsHiddenNotify] = useState<boolean>(true);
   const [isHiddenMobileMenu, setIsHiddenMobileMenu] = useState<boolean>(true);
   const showNotifyTable = () => setIsHiddenNotify(!isHiddenNotify);
   const showMobileMenu = () => setIsHiddenMobileMenu(!isHiddenMobileMenu);
+
+  const handleLogin = () => {
+    setTimeout(() => {
+      dispatch(
+        login({
+          name: "LinhNe",
+          loggedIn: true,
+        })
+      );
+    }, 2000);
+  };
+
+  const handleLogout = () => {
+    setTimeout(() => {
+      dispatch(logout());
+    }, 2000);
+  };
+
   return (
     <>
       <div className="fixed text-white bg-[#0f141a] top-0 z-40 w-full h-[72px] flex justify-between items-center border-b border-b-[#2c3944]">
@@ -153,17 +176,34 @@ function Header() {
               <FontAwesomeIcon icon={faList} size="xl" />
             </div>
           </div>
-          <div className="hidden lg:block">
-            <div className="flex items-center justify-center px-8 space-x-8">
-              <div className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center">
-                TuanNA
+
+          {user ? (
+            <div className="hidden lg:block">
+              <div className="flex items-center justify-center px-8 space-x-8">
+                <div className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center">
+                  {user.name}
+                </div>
+                <button onClick={handleLogout} className="cursor-pointer">
+                  Thoát
+                </button>
               </div>
-              <div className="cursor-pointer">Thoát</div>
             </div>
-          </div>
+          ) : (
+            <div className="mx-8 flex space-x-8">
+              <button
+                onClick={handleLogin}
+                className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center cursor-pointer"
+              >
+                Đăng nhập
+              </button>
+              <button className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center cursor-pointer">
+                Đăng ký
+              </button>
+            </div>
+          )}
         </div>
       </div>
-      {!isHiddenMobileMenu ? <MenuMobile nickName={"TuanNA"} /> : <> </>}
+      {!isHiddenMobileMenu ? <MenuMobile nickName={user.name} /> : <> </>}
     </>
   );
 }

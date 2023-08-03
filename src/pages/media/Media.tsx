@@ -2,12 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import bgMedia from "../../assets/images/bg_heading.png";
-import icNext from "../../assets/images/ic_next.png";
-import icPrev from "../../assets/images/ic_prev.png";
 import titleMedia from "../../assets/images/title_media.png";
 import "../../assets/js/slick-carousel/slick-theme.min.css";
 import "../../assets/js/slick-carousel/slick.min.css";
-import ItemRound from "./component/ItemRound";
+import { NextArrow, PrevArrow } from "./components/ArrowSlide";
+import ItemRound from "./components/ItemRound";
 
 function Media() {
   const [media, setMedia] = useState<any>([]);
@@ -34,22 +33,42 @@ function Media() {
 
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 5,
     slidesToScroll: 1,
     prevArrow: (
-      <div className="">
-        <img src={icPrev} alt="" />
-      </div>
+      <PrevArrow currentSlide={indexSelected} slideCount={media.length} />
     ),
     nextArrow: (
-      <div className="">
-        <img src={icNext} alt="" />
-      </div>
+      <NextArrow currentSlide={indexSelected} slideCount={media.length} />
     ),
+    responsive: [
+      {
+        breakpoint: 1535,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
-
-  console.log("🚀 ~ file: Media.tsx:28 ~ Media ~ media:", media);
 
   return (
     <section className="bg-[#161d22] text-white">
@@ -66,14 +85,14 @@ function Media() {
                 <div className="w-full mb-[6%]">
                   <img src={titleMedia} alt="" className="mx-auto" />
                 </div>
-                <div className="w-full">
+                <div className="w-[80%] md:w-[90%] 2xl:w-full mx-auto">
                   <Slider {...settings}>
                     {media.map((media: any, index: number) => {
                       return (
                         <div
                           key={index}
                           onClick={() => handleSelected(index)}
-                          className="px-2 cursor-pointer text-center tournaments-name selected"
+                          className="px-2 cursor-pointer text-center"
                         >
                           <p
                             className={

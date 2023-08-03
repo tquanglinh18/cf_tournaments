@@ -6,7 +6,8 @@ import divideRankRight from "../../assets/images/divider_rank_right.png";
 import icRankCup from "../../assets/images/ic_rank_cup.png";
 import titleHeading from "../../assets/images/text_rank_heading.png";
 import TableRank from "./TableRank";
-import "./index.css";
+import "./index.scss";
+import "./main.js";
 
 function Rank() {
   const [data, setData] = useState([]);

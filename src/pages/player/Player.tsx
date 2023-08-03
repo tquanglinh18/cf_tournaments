@@ -3,7 +3,7 @@ import bgHeading from "../../assets/images/bg_heading.png";
 import headingMemberOnPage from "../../assets/images/heading_member_on_page.png";
 import icArrowDown from "../../assets/images/ic_arrow_down.png";
 import icFacebok from "../../assets/images/icon_facebook.png";
-import "./index.css";
+import "./index.scss";
 import { useEffect, useState } from "react";
 
 type Props = {};
@@ -71,7 +71,7 @@ function Player(props: Props) {
               placeholder="Tìm theo vị trí"
               className="md:max-w-[230px] w-full py-4 px-5 rounded bg-[#353f48] text-[#959697] placeholder:text-[#959697]"
             >
-              <option value="" selected disabled>
+              <option value="" disabled selected>
                 Chọn vị trí sở trường
               </option>
               <option value="Tanker">Tanker</option>

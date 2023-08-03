@@ -9,7 +9,6 @@ const TYPE_POSITION_TAB = {
 
 tabSelectItem.forEach((tabSelect, index) => {
   tabSelect.addEventListener("click", function () {
-    console.log("clicked");
     const tabPositionSelect = tabSelect.dataset.position;
     const tabTableRanking = document.querySelectorAll(".tab_table_ranking");
 
