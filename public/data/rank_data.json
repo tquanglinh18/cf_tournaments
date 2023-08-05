@@ -1,155 +1,5 @@
 [
   {
-    "type": "player",
-    "data": [
-      {
-        "rank": 1,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 2,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 3,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 4,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 5,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 6,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 7,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 8,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 9,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 10,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      }
-    ]
-  },
-  {
-    "type": "team",
-    "data": [
-      {
-        "rank": 1,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 2,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 3,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 4,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 5,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 6,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 7,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 8,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 9,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      },
-      {
-        "rank": 10,
-        "name": "VTCOnline",
-        "total_score": 100,
-        "total_match_win": 100,
-        "total_tournaments": 100
-      }
-    ]
-  },
-  {
     "type": "total",
     "data": [
       {
@@ -158,6 +8,156 @@
         "total_score": 100,
         "total_match_win": 100,
         "total_tournaments": 100
+      },
+      {
+        "rank": 2,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 3,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 4,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 5,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 6,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 7,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 8,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 9,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 10,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      }
+    ]
+  },
+  {
+    "type": "teams",
+    "data": [
+      {
+        "rank": 1,
+        "name": "VTCOnline",
+        "total_score": 1000,
+        "total_match_win": 999,
+        "total_tournaments": 1000
+      },
+      {
+        "rank": 2,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 3,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 4,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 5,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 6,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 7,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 8,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 9,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      },
+      {
+        "rank": 10,
+        "name": "VTCOnline",
+        "total_score": 100,
+        "total_match_win": 100,
+        "total_tournaments": 100
+      }
+    ]
+  },
+  {
+    "type": "player",
+    "data": [
+      {
+        "rank": 1,
+        "name": "VTCOnline",
+        "total_score": 11,
+        "total_match_win": 22,
+        "total_tournaments": 33
       },
       {
         "rank": 2,

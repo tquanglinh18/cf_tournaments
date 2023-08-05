@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import PopUpUpdateInfo from "../components/pop-up/PopUpUpdateInfo";
 import NotFound from "../pages/error/NotFound";
 import Home from "../pages/home/Home";
-import Layout from "../pages/layout/Layout";
 import Media from "../pages/media/Media";
 import Player from "../pages/player/Player";
 import Rank from "../pages/ranking/Rank";
@@ -16,12 +15,14 @@ import ListTournaments from "../pages/tournaments/list-tournaments/ListTournamen
 import MyTournaments from "../pages/tournaments/my-tournaments/MyTournaments";
 import { selectUser } from "../redux/features/userSlice";
 import ProtectedRoute from "./ProtectedRoute";
+import Login from "../pages/login/Login";
+import Layout from "../pages/layout/Layout";
 
 const Router = () => {
   const user = useSelector(selectUser);
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="" element={<Layout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/tournaments" element={<PopUpUpdateInfo />} />
         <Route
@@ -54,9 +55,11 @@ const Router = () => {
         <Route path="/rank/teams-ranking" element={<Rank />} />
         <Route path="/rank/total-ranking" element={<Rank />} />
 
-        <Route path="media" element={<Media />} />
+        <Route path="/media" element={<Media />} />
 
         <Route path="*" element={<NotFound />} />
+
+        <Route path="/login" element={<Login />} />
       </Route>
     </Routes>
   );

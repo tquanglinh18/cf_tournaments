@@ -6,6 +6,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { login, logout } from "../../redux/features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser } from "../../redux/features/userSlice";
 import icHome from "../../assets/images/ic_home.png";
 import icMedia from "../../assets/images/ic_media.png";
 import icPlayer from "../../assets/images/ic_player.png";
@@ -13,13 +16,10 @@ import icRank from "../../assets/images/ic_rank.png";
 import icTeam from "../../assets/images/ic_team.png";
 import icTournaments from "../../assets/images/ic_tournaments.png";
 import logoCF from "../../assets/images/logo_cf.png";
-import HeaderItem from "./components/HeaderItem";
 import MenuMobile from "./components/MenuMobile";
 import NotifyItem from "./components/NotifyItem";
+import HeaderItem from "./components/HeaderItem";
 import "./index.scss";
-import { login, logout } from "../../redux/features/userSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { selectUser } from "../../redux/features/userSlice";
 
 function Header() {
   const user = useSelector(selectUser);
@@ -37,18 +37,18 @@ function Header() {
           loggedIn: true,
         })
       );
-    }, 2000);
+    }, 1000);
   };
 
   const handleLogout = () => {
     setTimeout(() => {
       dispatch(logout());
-    }, 2000);
+    }, 1000);
   };
 
   return (
     <>
-      <div className="fixed text-white bg-[#0f141a] top-0 z-40 w-full h-[72px] flex justify-between items-center border-b border-b-[#2c3944]">
+      <div className="fixed :hidden text-white bg-[#0f141a] top-0 z-40 w-full h-[72px] flex justify-between items-center border-b border-b-[#2c3944]">
         <div className="flex justify-between h-full lg:justify-start xl:justify-start w-full bg-[#0f141a] itmes-center">
           <div className="flex items-center w-[74px] p-2">
             <img src={logoCF} alt="" className="w-full" />
@@ -150,8 +150,8 @@ function Header() {
                   size="xl"
                 />
               </div>
-              {!isHiddenNotify ? (
-                <div className="absolute z-50 bg-black text-white w-[90%] lg:w-[40%] lg:translate-x-0 top-[72px] left-[50%] -translate-x-[50%] max-h-[350px] overflow-y-auto">
+              {!isHiddenNotify && (
+                <div className="notify absolute z-50 bg-black text-white w-[90%] lg:w-[40%] lg:translate-x-0 top-[72px] left-[50%] -translate-x-[50%] max-h-[350px] overflow-y-auto">
                   <NotifyItem type={"success"} message={"hehee"} />
                   <NotifyItem type={"error"} message={"oh n o"} />
                   <NotifyItem type={"success"} message={"hehee"} />
@@ -165,8 +165,6 @@ function Header() {
                   <NotifyItem type={"success"} message={"hehee"} />
                   <NotifyItem type={"error"} message={"oh n o"} />
                 </div>
-              ) : (
-                <></>
               )}
             </div>
             <div
@@ -189,21 +187,31 @@ function Header() {
               </div>
             </div>
           ) : (
-            <div className="mx-8 flex space-x-8">
-              <button
-                onClick={handleLogin}
-                className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center cursor-pointer"
-              >
-                Đăng nhập
-              </button>
-              <button className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center cursor-pointer">
-                Đăng ký
-              </button>
+            <div className="hidden lg:block">
+              <div className=" mx-8 flex space-x-8">
+                <button
+                  onClick={handleLogin}
+                  className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center cursor-pointer"
+                >
+                  Đăng nhập
+                </button>
+                <button className="bg-[#f75014] px-2 py-1 rounded min-w-[120px] text-center cursor-pointer">
+                  Đăng ký
+                </button>
+              </div>
             </div>
           )}
         </div>
       </div>
-      {!isHiddenMobileMenu ? <MenuMobile nickName={user.name} /> : <> </>}
+      {!isHiddenMobileMenu ? (
+        <MenuMobile
+          user={user}
+          handleLogin={handleLogin}
+          handleLogout={handleLogout}
+        />
+      ) : (
+        <> </>
+      )}
     </>
   );
 }

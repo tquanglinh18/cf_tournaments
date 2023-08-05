@@ -1,24 +1,38 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
+import tournamentsApi from "../../apis/TournamentsApi";
 import bgHeading from "../../assets/images/bg_heading.png";
 import divideRankLeft from "../../assets/images/divider_rank_left.png";
 import divideRankRight from "../../assets/images/divider_rank_right.png";
 import icRankCup from "../../assets/images/ic_rank_cup.png";
 import titleHeading from "../../assets/images/text_rank_heading.png";
-import TableRank from "./TableRank";
 import "./index.scss";
-import "./main.js";
+import { loadPageScript } from "./main.js";
+import TableRank from "./components/TableRank";
 
 function Rank() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<any>([]);
   useEffect(() => {
-    axios
-      .get("./data/rank_data.json")
-      .then((results) => {
-        setData(results.data[0].data);
-      })
-      .catch(() => {});
+    const fetchRankData = async () => {
+      try {
+        const response = await tournamentsApi.getRankData();
+        setData(response);
+        console.log("🚀 ~ useEffect ~ response:", response);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchRankData();
   }, []);
+  
+  const stateLoadPage = document.readyState;
+  useEffect(() => {
+    if (stateLoadPage === "complete") {
+      return loadPageScript;
+    } else {
+      return window.addEventListener("load", loadPageScript);
+    }
+  }, [stateLoadPage]);
   return (
     <section className="bg-[#161d22] relative">
       <div className="absolute top-0 w-full">
@@ -76,9 +90,17 @@ function Rank() {
               <img className="w-full" src={divideRankRight} alt="" />
             </div>
           </div>
-          <TableRank type={"total"} data={data} />
-          <TableRank type={"team"} data={data} />
-          <TableRank type={"player"} data={data} />
+
+          {data.map((dataType: any, index: number) => {
+            return (
+              <TableRank
+                key={index}
+                type={dataType.type}
+                data={dataType.data}
+                isShow={dataType.type === "teams" ? true : false}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

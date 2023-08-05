@@ -17,6 +17,7 @@
     "antd": "^5.8.1",
     "axios": "^1.4.0",
     "clsx": "^2.0.0",
+    "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.2",

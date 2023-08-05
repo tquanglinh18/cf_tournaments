@@ -1,6 +1,6 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
+import tournamentsApi from "../../apis/TournamentsApi";
 import bgMedia from "../../assets/images/bg_heading.png";
 import titleMedia from "../../assets/images/title_media.png";
 import "../../assets/js/slick-carousel/slick-theme.min.css";
@@ -13,19 +13,17 @@ function Media() {
   const [indexSelected, setIndexSelected] = useState<number>(0);
 
   useEffect(() => {
-    fetchData();
+    const fetchMediaData = async () => {
+      try {
+        const response = await tournamentsApi.getMediaData();
+        setMedia(response);
+        console.log("FETCH DATA SUCCESS: ", response);
+      } catch (error) {
+        console.log("FETCH DATA FAILED: ", error);
+      }
+    };
+    fetchMediaData();
   }, []);
-
-  async function fetchData() {
-    await axios
-      .get("./data/media_data.json")
-      .then((results) => {
-        setMedia(results.data);
-      })
-      .catch((error) => {
-        setMedia({});
-      });
-  }
 
   function handleSelected(index: number) {
     setIndexSelected(index);

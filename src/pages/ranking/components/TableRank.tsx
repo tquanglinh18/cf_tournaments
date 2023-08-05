@@ -1,12 +1,18 @@
 type Props = {
   type: string;
   data: any[];
+  isShow: boolean;
 };
 
 function TableRank(props: Props) {
-  const { type, data } = props;
+  const { type, data, isShow } = props;
   return (
-    <div className={"overflow-x-auto tab_table_ranking"} id={type}>
+    <div
+      className={`overflow-x-auto tab_table_ranking ${
+        isShow ? "block" : "hidden"
+      }`}
+      id={type}
+    >
       <table className="w-full custom_ranking_view_top min-w-[767px] lg:min-w-0">
         <thead>
           <tr>

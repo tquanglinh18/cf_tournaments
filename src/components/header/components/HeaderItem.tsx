@@ -1,22 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-HeaderItem.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string,
-  urlIcon: PropTypes.string,
-  subMenus: PropTypes.array,
+type Props = {
+  id: string;
+  name: string;
+  urlIcon: string;
+  subMenus: any;
 };
 
-HeaderItem.defaultProps = {
-  id: "",
-  name: "",
-  urlIcon: "",
-  subMenus: [],
-};
-
-function HeaderItem(props) {
+function HeaderItem(props: Props) {
   const { id, name, urlIcon, subMenus } = props;
   return (
     <div
@@ -37,7 +29,7 @@ function HeaderItem(props) {
           id={"sub-menu-" + id}
           className="absolute hidden min-w-[240px] text-white z-50"
         >
-          {subMenus.map((subMenu, index) => {
+          {subMenus.map((subMenu: any, index: number) => {
             return (
               <div
                 key={index}
